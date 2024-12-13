@@ -1,5 +1,9 @@
 import { NextResponse } from "next/server";
 
+export const dynamic = "force-static"; // 静的なエンドポイントに設定
+export const revalidate = 60; // キャッシュの再検証を60秒毎に設定
+
+
 export async function GET() {
     const hamWords: string[] = [
         "アウチッチ",
