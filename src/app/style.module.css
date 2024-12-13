@@ -1,3 +1,104 @@
+/* 背景 */
 .top {
-    color: pink;
-}
+    background-color: #b0e0e6;
+    background-image: linear-gradient(45deg, #b0e0e6 25%, #ffffff 25%, #ffffff 50%, #b0e0e6 50%, #b0e0e6 75%, #ffffff 75%, #ffffff);
+    background-size: 20px 20px;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* 会話履歴 */
+.chatHistory {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* 上下に並べる */
+    align-items: stretch; /* 両端揃えにする */
+    margin-bottom: 80px;
+    margin-left: 20%;
+    margin-top: 100px;
+    width: 50%; /* 会話履歴の幅を調整 */
+  }
+  
+  /* 会話のエントリー */
+  .chatEntry {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* メッセージを上下に並べる */
+    align-items: stretch; /* 両端揃え */
+    width: 100%; /* 会話エントリーの幅を100%に */
+    margin: 50px 0; /* メッセージ間の間隔を少し開ける */
+  }
+  
+  /* ユーザーのメッセージ（右寄せ） */
+  .userMessage {
+    background-color: #90ee90;
+    padding: 12px;
+    border-radius: 10px;
+    text-align: right;
+    max-width: 70%; /* メッセージの幅制限 */
+    word-wrap: break-word;
+    margin-left: auto; /* 右寄せ */
+    margin-top: -100px;
+    margin-bottom: 8px;
+    display: inline-block;
+    white-space: pre-wrap;
+  }
+  
+  /* ハム語の返答（左寄せ） */
+  .hamMessage {
+    background-color: #ffffff;
+    padding: 12px;
+    border-radius: 10px;
+    text-align: left;
+    max-width: 70%; /* メッセージの幅制限 */
+    word-wrap: break-word;
+    margin-right: auto; /* 左寄せ */
+    margin-top: 8px;
+    margin-bottom: 8px;
+    display: inline-block;
+    white-space: pre-wrap;
+  }
+  
+  
+  /* テキストエリアと送信ボタンを横並びにするためのスタイル */
+  .inputArea {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    width: 60%; /* 全体の横幅を指定 */
+    margin: 20px auto;
+  }
+  
+  /* テキストエリア（吹き出し風） */
+  .textArea {
+    background-color: white;
+    border: 2px solid #0091c8;
+    border-radius: 15px;
+    padding: 15px;
+    width: 75%; /* テキストエリアの幅 */
+    font-size: 16px;
+    font-family: 'Arial', sans-serif;
+    color: gray;
+  }
+  
+  /* 送信ボタン */
+  .sendButton {
+    background-color: #0091c8;
+    color: white;
+    font-weight: 700;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 24px;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .hamu {
+    font-size: 36px;
+    color: #1e90ff;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+  
