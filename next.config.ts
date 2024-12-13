@@ -5,3 +5,9 @@ const nextConfig: NextConfig = {
 };
 
 export default nextConfig;
+
+module.exports = {
+  experimental: {
+    outputStandalone: true, // 出力設定を調整
+  },
+};
