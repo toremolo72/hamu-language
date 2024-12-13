@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import styles from './style.module.css';
+import Link from 'next/link';
 
 export default function Home() {
   const [message, setMessage] = useState<string>(''); // ユーザーの入力メッセージ
@@ -43,16 +44,16 @@ export default function Home() {
       <h1 className={styles.title}>ハムちゃんとおしゃべりしよう</h1>
 
       {/* 会話履歴の表示 */}
-      <div className={styles.chatHistory}>
-        {conversation.map((entry, index) => (
-          <div key={index} className={styles.chatEntry}>
-            {/* ハム語の返答（左寄せ） */}
-            <div className={styles.hamMessage}>{entry.ham}</div>
-            {/* ユーザーのメッセージ（右寄せ） */}
-            <div className={styles.userMessage}>{entry.user}</div>
+      {conversation.map((entry, index) => (
+        <div key={index} className={styles.chatEntry}>
+          {/* ハム語の返答（左寄せ） */}
+          <div className={styles.hamMessage}>
+            🐹{entry.ham}
           </div>
-        ))}
-      </div>
+          {/* ユーザーのメッセージ（右寄せ） */}
+          <div className={styles.userMessage}>{entry.user}</div>
+        </div>
+      ))}
 
       {/* メッセージ入力欄と送信ボタンを横並びに */}
       <div className={styles.inputArea}>
@@ -67,6 +68,12 @@ export default function Home() {
         <button onClick={sendMessage} className={styles.sendButton}>
           送信
         </button>
+      </div>
+
+      <div>
+        <Link href={'https://www.nintendo.co.jp/n02/dmg/b86j/hamugo01/index.html'} className={styles.link}>
+          🐹🐹🐹ハム語へのリンク🐹🐹🐹
+        </Link>
       </div>
     </div>
   );

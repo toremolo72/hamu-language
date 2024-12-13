@@ -25,8 +25,8 @@
     flex-direction: column;
     justify-content: flex-start; /* メッセージを上下に並べる */
     align-items: stretch; /* 両端揃え */
-    width: 100%; /* 会話エントリーの幅を100%に */
-    margin: 50px 0; /* メッセージ間の間隔を少し開ける */
+    width: 50%; /* 会話エントリーの幅を100%に */
+    margin: 50px auto; /* メッセージ間の間隔を少し開ける */
   }
   
   /* ユーザーのメッセージ（右寄せ） */
@@ -44,20 +44,30 @@
     white-space: pre-wrap;
   }
   
-  /* ハム語の返答（左寄せ） */
-  .hamMessage {
-    background-color: #ffffff;
-    padding: 12px;
-    border-radius: 10px;
-    text-align: left;
-    max-width: 70%; /* メッセージの幅制限 */
-    word-wrap: break-word;
-    margin-right: auto; /* 左寄せ */
-    margin-top: 8px;
-    margin-bottom: 8px;
-    display: inline-block;
-    white-space: pre-wrap;
-  }
+    /* ハム語の返答（左寄せ） */
+    .hamMessage {
+        background-color: #ffffff;
+        padding: 12px;
+        border-radius: 10px;
+        text-align: left;
+        max-width: 70%; /* メッセージの幅制限 */
+        word-wrap: break-word;
+        margin-right: auto; /* 左寄せ */
+        margin-top: 8px;
+        margin-bottom: 8px;
+        display: flex;
+        align-items: center; /* 画像とテキストを縦中央揃え */
+        white-space: pre-wrap;
+    }
+    
+    /* ハム語の返答の画像（正円） */
+    .hamMessage img {
+        border-radius: 50%; /* 正円にする */
+        width: 24px; /* 画像の幅 */
+        height: 24px; /* 画像の高さ */
+        margin-right: 8px; /* テキストとの間隔 */
+    }
+  
   
   
   /* テキストエリアと送信ボタンを横並びにするためのスタイル */
@@ -102,3 +112,8 @@
     margin-top: 20px;
   }
   
+  .link {
+    background-color: white;
+    color: pink;
+    font-weight: 800;
+  }
