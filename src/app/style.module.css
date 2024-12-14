@@ -6,6 +6,13 @@
     padding: 20px;
     text-align: center;
   }
+
+  .title {
+    font-size: larger;
+    font-weight: 900;
+    color: pink;
+    background-color: white;
+  }
   
   /* 会話履歴 */
 .chatHistory {
@@ -13,10 +20,10 @@
     flex-direction: column;
     justify-content: flex-start; /* 上下に並べる */
     align-items: stretch; /* 両端揃えにする */
-    margin-bottom: 80px;
-    margin-left: 20%;
-    margin-top: 100px;
-    width: 50%; /* 会話履歴の幅を調整 */
+    margin-bottom: 100px;
+    margin-left: 10%;
+    margin-top: 300px;
+    width: 60%; /* 会話履歴の幅を調整 */
   }
   
   /* 会話のエントリー */
@@ -25,8 +32,8 @@
     flex-direction: column;
     justify-content: flex-start; /* メッセージを上下に並べる */
     align-items: stretch; /* 両端揃え */
-    width: 50%; /* 会話エントリーの幅を100%に */
-    margin: 50px auto; /* メッセージ間の間隔を少し開ける */
+    width: 70%; 
+    margin: 80px auto; /* メッセージ間の間隔を少し開ける */
   }
   
   /* ユーザーのメッセージ（右寄せ） */
@@ -38,7 +45,7 @@
     max-width: 70%; /* メッセージの幅制限 */
     word-wrap: break-word;
     margin-left: auto; /* 右寄せ */
-    margin-top: -100px;
+    margin-top: -130px;
     margin-bottom: 8px;
     display: inline-block;
     white-space: pre-wrap;
@@ -76,8 +83,9 @@
     justify-content: space-between;
     align-items: center;
     margin-top: 20px;
-    width: 60%; /* 全体の横幅を指定 */
-    margin: 20px auto;
+    width: 70%; 
+    margin-left: 20%;
+    margin: 10% auto;
   }
   
   /* テキストエリア（吹き出し風） */
@@ -87,6 +95,7 @@
     border-radius: 15px;
     padding: 15px;
     width: 75%; /* テキストエリアの幅 */
+    height: 50px;
     font-size: 16px;
     font-family: 'Arial', sans-serif;
     color: gray;
@@ -99,18 +108,18 @@
     font-weight: 700;
     border: none;
     border-radius: 8px;
-    padding: 12px 24px;
+    padding: 12px;
     font-size: 16px;
     cursor: pointer;
     font-family: 'Arial', sans-serif;
   }
   
-  .hamu {
+  /* .hamu {
     font-size: 36px;
     color: #1e90ff;
     font-weight: bold;
     margin-top: 20px;
-  }
+  } */
   
   .link {
     background-color: white;

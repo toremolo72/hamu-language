@@ -61,12 +61,12 @@ export default function Home() {
           className={styles.textArea}
           value={message}
           onChange={(e) => setMessage(e.target.value)}
-          placeholder="メッセージを入力してください"
+          placeholder="メッセージを入力"
           rows={4}
         />
 
         <button onClick={sendMessage} className={styles.sendButton}>
-          送信
+          📤
         </button>
       </div>
 
