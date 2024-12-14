@@ -33,7 +33,7 @@
     justify-content: flex-start; /* メッセージを上下に並べる */
     align-items: stretch; /* 両端揃え */
     width: 70%; 
-    margin: 80px auto; /* メッセージ間の間隔を少し開ける */
+    margin: 120px auto; /* メッセージ間の間隔を少し開ける */
   }
   
   /* ユーザーのメッセージ（右寄せ） */
